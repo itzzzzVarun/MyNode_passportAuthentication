@@ -1,0 +1,32 @@
+<style>
+    table, td{
+        border:solid 1px black;
+    }
+    </style>
+    <table style="width:30%">
+      <tr>
+        <th>Your Profile</th>
+        <th><a href="/logout">Log out</a></th>
+      </tr>
+      <tr>
+        <td>Id</td>
+        <td><%= user.id%></td>
+      </tr>
+      <tr>
+        <td>Username</td>
+        <td><%= user.username%></td>
+      </tr>
+      <tr>
+        <td>Display Name</td>
+        <td><%= user.displayName%></td>
+      </tr>
+    <tr>
+    <td>Email</td>
+    <td><%= user.email%></td>
+    </tr>
+    <tr>
+        <td>Photo</td>
+        <td><img src="/../uploads/<%= user.image%>" width="100px" height="100px"></td>
+        </tr>
+ 
+    </table>
